@@ -4,9 +4,9 @@ fn main() {
     let b: i32 = 10;
     println!("a: {a}, b: {b}");
 
-    let temp = a;
-    let a = b;
-    let b = temp;
+    let a = a ^ b;
+    let b = a ^ b;
+    let a = a ^ b;
 
     println!("a: {a}, b: {b}");
 }

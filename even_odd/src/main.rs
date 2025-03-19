@@ -16,7 +16,7 @@ fn main() {
     stdin().read_line(&mut input).expect("Failed to read input.");
 
     let number: i32 = input.trim().parse().expect("Please enter a valid number.");
-    
+
     is_even_or_odd(number);
 
 }

@@ -4,7 +4,7 @@ fn closest_number(n: i32, m: i32) -> i32 {
     let mut closest: i32 = 0;
     let mut min_difference = i32::MAX;
     
-    println!("Searching closest number");
+    println!("Looking for multiples of {m} near {n}");
 
     // Check numbers around n
     for i in (n - m.abs())..=(n + m.abs()) {
